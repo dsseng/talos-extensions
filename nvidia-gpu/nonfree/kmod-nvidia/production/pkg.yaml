@@ -5,7 +5,7 @@ dependencies:
  - stage: base
 # The pkgs version for a particular release of Talos as defined in
 # https://github.com/siderolabs/talos/blob/<talos version>/pkg/machinery/gendata/data/pkgs
- - image: "{{ .BUILD_ARG_PKGS_PREFIX }}/nonfree-kmod-nvidia-production-pkg:{{ .BUILD_ARG_PKGS }}"
+ - image: "ghcr.io/dsseng/nonfree-kmod-nvidia-production-pkg:v1.13.0-alpha.0-9-ge07aee3"
 steps:
   - install:
       - |
